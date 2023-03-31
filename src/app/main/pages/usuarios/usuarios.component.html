@@ -1,0 +1,12 @@
+<p>Usuario Componente principal</p>
+<pre>
+    {{ usuarios | json }}
+</pre>
+
+<app-usuario-new (createUser)="create($event)"></app-usuario-new>
+<app-usuario-list 
+    [usuarios]="usuarios"
+    (eliminaUsuario)="borrar($event)"
+    (editarUsuario)="actualizar($event)"
+    >
+</app-usuario-list>

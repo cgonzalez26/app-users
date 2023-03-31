@@ -1,0 +1,12 @@
+<h3>Listado de Usuarios</h3>
+<div *ngFor="let u of usuarios">
+    {{u.nombre}} - {{u.apellido}} - {{u.email}}
+    <button (click)="borrar(u)">Borrar</button>
+    <button (click)="u.editable = !u.editable">Actualizar</button>
+
+    <app-usuario-edit 
+        *ngIf="u.editable"
+        [usuario]="u"
+        (editarUsuario) ="actualizar($event)"
+        ></app-usuario-edit>
+</div>

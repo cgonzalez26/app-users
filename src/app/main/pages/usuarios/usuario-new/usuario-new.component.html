@@ -1,0 +1,9 @@
+<p>Usuario Componente nuevo</p>
+
+<form (submit)="create()">
+    <input type="text" name="nombre" [(ngModel)]="nuevoUsuario.nombre">
+    <input type="text" name="apellido" [(ngModel)]="nuevoUsuario.apellido">
+    <input type="text" name="email" [(ngModel)]="nuevoUsuario.email">
+
+    <button type="submit">Guardar</button>
+</form>

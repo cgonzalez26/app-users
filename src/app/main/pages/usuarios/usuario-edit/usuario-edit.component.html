@@ -1,0 +1,9 @@
+<p>Usuario Componente editar</p>
+
+<form (submit)="actualizar()">
+    <input type="text" name="nombre" [(ngModel)]="editUsuario.nombre">
+    <input type="text" name="apellido" [(ngModel)]="editUsuario.apellido">
+    <input type="text" name="email" [(ngModel)]="editUsuario.email">
+
+    <button type="submit">Guardar</button>
+</form>
