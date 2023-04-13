@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Usuario {\n  constructor() {\n    this.id = Math.floor(Math.random() * 100);\n    this.nombre = \"\";\n    this.apellido = \"\";\n    this.email = \"\";\n    this.editable = false;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
